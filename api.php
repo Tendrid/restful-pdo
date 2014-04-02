@@ -1,0 +1,4 @@
+<?php
+// restful interface.
+
+?>
