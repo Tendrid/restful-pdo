@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^rest/([\w]+)/(.*)$ api.php?__model=$1&params=$2 [NC,L]
