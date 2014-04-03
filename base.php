@@ -1,6 +1,17 @@
 <?php
 // abstract class used to define modeles
 abstract class base{
+
+    // if requesting all, this defines the limit
+    $querylimit = 20;
+
+    // this defines which field to sort by
+    $sortby = "id";
+
+    // this defines sort direction
+    $sort = "desc";
+
+
     function __construct($api){
         $this->api = $api;
     }

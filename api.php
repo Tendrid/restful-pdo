@@ -74,22 +74,26 @@ class API{
             if($pk){
                 $obj = new $_GET["__model"]($this);
                 $obj->lookup($pk);
-                echo "lookup";
+                # TODO: output
             }else{
-                echo "show all";
+                # TODO: show all, uses limit and sort params in base
             }
 
         }
     }
 
     function POST(){
-        
+        #lookup
+        #alter
+        #save
     }
+
     function PUT(){
-        
+        #create using mysql REPLACE (overwrites)
     }
+
     function DELETE(){
-        
+        #delete
     }
 
     function error($e){
