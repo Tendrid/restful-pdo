@@ -48,6 +48,7 @@ class API{
 
     function processRequest(){
         $verb = $_SERVER['REQUEST_METHOD'];
+        $this->verb = $verb;
         if( in_array($verb, $this->settings['verbs']) ){
             $this->$verb();
         }else{
@@ -73,7 +74,6 @@ class API{
             if($pk){
                 $obj = new $_GET["__model"]($this);
                 $obj->lookup($pk);
-                $obj->
                 echo "lookup";
             }else{
                 echo "show all";
